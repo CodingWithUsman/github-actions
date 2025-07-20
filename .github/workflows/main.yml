@@ -1,14 +1,13 @@
 name: github-actions
+
 on: 
- push:
+  push:
     branches: [ main ]
 
-job:
+jobs:
   demo:
-    run-on : ubuntu-latest
+    runs-on: ubuntu-latest
 
     steps:
-      -name: gretting
-      run: echo "hello from usman"
-      
-      
+      - name: greeting
+        run: echo "hello from usman"
